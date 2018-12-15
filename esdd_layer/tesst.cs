@@ -11,7 +11,7 @@ namespace esdd_layer
        public tesst()
         {
             esddDAL.DatabaseContext db = new esddDAL.DatabaseContext();
-            db.Database.CreateIfNotExists();
+            db.activities.ToList();
         }
 
     }

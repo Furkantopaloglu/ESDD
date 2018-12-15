@@ -21,6 +21,10 @@ namespace esddDAL
         public DbSet<Media> medias { get; set; }
         public DbSet<Prodes> prodes { get; set; }
 
+        public DatabaseContext()
+        {
+            Database.SetInitializer(new MyInitilizer());
+        }
 
     }
 }

@@ -30,12 +30,13 @@ namespace esddDAL
                     Text = FakeData.PlaceData.GetAddress(),
                     CreateOn = DateTime.Now,
 
+
                 };
                 context.activities.Add(act);
                 context.SaveChanges();
             }
-           
 
+           
         }
     }
 }
